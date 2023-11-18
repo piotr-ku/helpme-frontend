@@ -1,20 +1,22 @@
-import React from "react";
-import {IonButton} from "@ionic/react";
-import './Button.css';
+import { IonButton } from "@ionic/react";
+import { useHistory } from "react-router";
+import "./Button.css";
 
-type Props = {
-    href: string,
-    title: string
+function Button() {
+  const history = useHistory();
+
+  return (
+    <>
+        <IonButton
+          className="big-alert-button ion-text-uppercase"
+          onClick={(e) => {
+            e.preventDefault();
+            history.push("/Dashboard");
+          }}
+        >
+          Pomocy
+        </IonButton>
+    </>
+  );
 }
-
-function Button({href, title}: Props) {
-    return (
-        <>
-            <IonButton className="big-alert-button center" href={href}>
-                {title}
-            </IonButton>
-        </>
-    );
-}
-
 export default Button;
