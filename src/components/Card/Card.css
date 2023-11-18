@@ -1,0 +1,19 @@
+.container {
+    max-width: 80%;
+    padding: 1rem;
+}
+
+.card {
+    max-width: 35%;
+    margin: 2rem auto;
+    max-width: 420px;
+}
+.img {
+    object-fit: cover;
+}
+
+.flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
