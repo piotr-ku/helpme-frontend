@@ -3,7 +3,7 @@ import {
     IonCol,
     IonContent,
     IonIcon,
-    IonLabel,
+    IonLabel, IonRouterOutlet,
     IonRow,
     IonTabBar,
     IonTabButton,
@@ -32,20 +32,27 @@ import "@ionic/react/css/display.css";
 
 /* Theme variables */
 import "./theme/variables.css";
+import {Route, Router} from "react-router";
+import {IonReactRouter} from "@ionic/react-router";
 
 setupIonicReact();
 
-const App: React.FC = () => (
+const history = null
 
+const App: React.FC = () => (
         <IonApp>
+            <IonReactRouter>
             <IonContent>
-                <IonRow>
-                    <IonCol>
-                        <Button href="/pomoc" title="Pomoc"/>
-                        <Card />
-                    </IonCol>
-                </IonRow>
+                    <IonRow>
+                        <IonCol>
+                            <Button href="/pomoc" title="Pomoc"/>
+                            <Card/>
+                        </IonCol>
+                    </IonRow>
             </IonContent>
+                <Route exact path="/help"/>
+                <Card/>
+            </IonReactRouter>
 
             <IonTabBar slot="bottom" color="light">
                 <IonTabButton tab="home" href="/">
