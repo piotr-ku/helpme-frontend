@@ -8,9 +8,19 @@
     max-width: 420px;
 }
 
+.container{
+    display: flex;
+}
+
 .rating {
     display: flex;
     align-items: center;
+    justify-content: space-evenly;
+    width: 3rem;
+}
+
+.star {
+    color: gold;
 }
 
 .img {
@@ -21,4 +31,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.w-50 {
+    width: 50%;
 }

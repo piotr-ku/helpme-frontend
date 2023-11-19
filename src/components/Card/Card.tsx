@@ -71,14 +71,14 @@ function Card({ isHome }: Props) {
     <>
       {isHome &&
         data.map((item, index) => (
-          <IonCard className="card ion-margin-top" key={index}>
+          <IonCard className="card ion-margin-top ion-padding-bottom" key={index}>
             <IonImg alt="user" src={item.imgUrl} className="img" />
             <IonCardHeader>
-              <IonCardTitle>
-                <span>Nazwa:</span>&nbsp;{item.name}
+              <IonCardTitle className="w-50">
+                {item.name}
               </IonCardTitle>
               <IonCardSubtitle>
-                <span>Miasto:</span>&nbsp;{item.location}
+                {item.location}
               </IonCardSubtitle>
             </IonCardHeader>
             <IonCardContent className="flex ion-justify-content-between">
@@ -87,26 +87,29 @@ function Card({ isHome }: Props) {
                 {item.address}
               </p>
               <p className="rating">
-                <IonIcon icon={star} />
-                &nbsp;{item.rating}
+                {item.rating}
+                <IonIcon icon={star} className="ion-margin-end star" />
               </p>
             </IonCardContent>
-            <IonButton
-              onClick={(e) => {
-                e.preventDefault();
-                history.push("/wait");
-              }}
-            >
-              <IonIcon slot="icon-only" icon={callOutline}></IonIcon>
-            </IonButton>
-            <IonButton
-              onClick={(e) => {
-                e.preventDefault();
-                history.push(`/profile-${item.type}`);
-              }}
-            >
-              <IonIcon slot="icon-only" icon={item.icon}></IonIcon>
-            </IonButton>
+            <div className="flex ion-justify-content-center">
+              <IonButton
+                  className="ion-padding-horizontal"
+                  onClick={(e) => {
+                    e.preventDefault();
+                    history.push("/wait");
+                  }}
+              >
+                <IonIcon slot="icon-only" color="dark" icon={callOutline}></IonIcon>
+              </IonButton>
+              <IonButton
+                  onClick={(e) => {
+                    e.preventDefault();
+                    history.push(`/profile-${item.type}`);
+                  }}
+              >
+                <IonIcon slot="icon-only" color="dark" icon={item.icon}></IonIcon>
+              </IonButton>
+            </div>
           </IonCard>
         ))}
     </>
