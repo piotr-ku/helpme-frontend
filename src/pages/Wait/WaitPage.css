@@ -1,0 +1,17 @@
+.spinner-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.spinner-element {
+    width: 200px;
+    height: 100px;
+    margin: 0 auto;
+}
+
+.spinner-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

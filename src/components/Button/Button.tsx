@@ -11,7 +11,7 @@ function Button() {
           className="big-alert-button ion-text-uppercase"
           onClick={(e) => {
             e.preventDefault();
-            history.push("/Dashboard");
+            history.push("/dashboard");
           }}
         >
           Pomocy

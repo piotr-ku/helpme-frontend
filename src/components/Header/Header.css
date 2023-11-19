@@ -1,0 +1,8 @@
+.header-logo {
+    display: flex;
+    justify-content: center;
+}
+
+ion-header ion-toolbar:first-of-type {
+    --padding-top: 32px;
+}

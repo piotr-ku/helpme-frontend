@@ -4,10 +4,15 @@
 }
 
 .card {
-    max-width: 35%;
     margin: 2rem auto;
     max-width: 420px;
 }
+
+.rating {
+    display: flex;
+    align-items: center;
+}
+
 .img {
     object-fit: cover;
 }
