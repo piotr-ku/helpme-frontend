@@ -32,6 +32,8 @@ import LogoPage from "./pages/Logo/LogoPage";
 import ChoicePage from "./pages/Choice/ChoicePage";
 import WaitPage from "./pages/Wait/WaitPage";
 import AcceptPage from "./pages/Accept/AcceptPage";
+import PrivateProfilePage from "./pages/Profile/PrivateProfilePage";
+import CommercialProfilePage from "./pages/Profile/CommercialProfilePage";
 
 setupIonicReact();
 
@@ -47,6 +49,8 @@ const App: React.FC = () => (
           <Route path="/dashboard" component={DashboardPage} />
           <Route path="/wait" component={WaitPage} />
           <Route path="/accept" component={AcceptPage} />
+          <Route path="/profile-private" component={PrivateProfilePage} />
+          <Route path="/profile-commercial" component={CommercialProfilePage} />
           <Redirect exact from="/" to="/logo" />
         </IonRouterOutlet>
       </IonReactRouter>
