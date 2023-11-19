@@ -7,11 +7,11 @@ function Header() {
       <IonHeader>
         <IonToolbar class="ion-padding" color="primary">
           <IonButtons slot="start">
-            <IonBackButton mode="md" defaultHref="/choice" />
+            <IonBackButton mode="md" defaultHref="/dashboard" />
           </IonButtons>
           <div className="header-logo">
-            <a href="/choice">
-              <img src="src/assets/HELPMEFY.svg" />
+            <a href="/dashboard">
+              <img src="src/assets/HELPMi.svg" />
             </a>
           </div>
         </IonToolbar>

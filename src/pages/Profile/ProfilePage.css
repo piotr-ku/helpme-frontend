@@ -1,0 +1,113 @@
+.profile-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile-icon {
+    width: 200px;
+    height: 200px;
+    background-color: var(--ion-color-primary-contrast);
+    color: var(--ion-color-primary);
+    border-radius: 50%;
+    font-size: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile-title {
+    text-transform: uppercase;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.profile-cat {
+    width: 150px;
+    height: 20px;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    border-radius: 20px;
+    background-color: var(--ion-color-primary-contrast);
+    color: var(--ion-color-primary);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+}
+
+.profile-bar {
+    width: 300px;
+}
+
+.profile-level {
+    color: var(--ion-color-primary-contrast);
+    text-align: center;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.profile-progress-bar {
+    margin: 1rem auto;
+    padding: 5px;
+}
+
+.profile-level span {
+    display: inline-block;
+    background-color: rgba(255, 255, 255, 0.8);
+    color: var(--ion-color-primary);
+    border-radius: 50%;
+    padding: 5px;
+    font-size: 150%;
+    width: 50px;
+    height: 50px;
+}
+
+.profile-section h2 {
+    color: #CCD6E2;
+    font-size: 35px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.profile-section div {
+    display: flex;
+}
+
+.profile-section div .profile-icon-mini {
+    width: 100px;
+    height: 100px;
+    padding: 10px;
+    font-size: 200%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #CCD6E2;
+    border-radius: 50%;
+    margin: 1rem;
+}
+
+.profile-section .profile-icon-very-mini {
+    width: 50px;
+    height: 50px;
+    padding: 5px;
+    font-size: 200%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #CCD6E2;
+    border-radius: 50%;
+    margin: 1rem;
+}
+
+.profile-section li {
+    padding: 10px 0;
+}

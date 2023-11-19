@@ -8,7 +8,7 @@ const LogoPage: React.FC = () => {
         <IonRow class="ion-align-items-center ion-padding max-height-row">
           <IonCol class="ion-text-center ion-padding">
             <a href="/choice">
-                <img src="src/assets/HELPMEFY.svg" />
+                <img src="src/assets/HELPMi.svg" />
             </a>
           </IonCol>
         </IonRow>
